@@ -1,0 +1,22 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner sc = new Scanner(System.in);
+        
+        String name = sc.nextLine();
+        int age = sc.nextInt();
+        float cgpa = sc.nextFloat();
+        char grade = sc.next().charAt(0);
+        
+        cgpa = (int)(cgpa * 100) / 100f;
+
+        System.out.printf("Name: %s\n", name);
+        System.out.printf("Age: %d\n", age);
+        System.out.printf("CGPA: %.2f\n", cgpa);
+        System.out.printf("Grade: %c\n", grade);
+        }
+}
